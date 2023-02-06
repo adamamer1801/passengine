@@ -1,5 +1,3 @@
-import { FaBullseye } from "react-icons/fa"
-
 const defaultCharacterPool = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()<>,./?{}[]".split("")
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
 const lowercase = "abcdefghijklmnopqrstuvwxyz".split("")
