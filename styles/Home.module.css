@@ -1,6 +1,5 @@
 .mainContainer {
-  width: 80rem;
-  height: 40rem;
+  width: 90vw;
   background-color: #222222;
   align-items: center;
   border-radius: 10px;
@@ -18,9 +17,9 @@
 }
 
 .passwordBox {
-  width:80rem;
+  width:90vw;
+  padding: 1vmax;
   background-color: #3F3F3F;
-  height: 10vh;
   border-radius: 10px 10px 0 0;
   color: #ffffff;
   display: flex;
@@ -28,20 +27,27 @@
 }
 
 .password {
-  margin: 1rem;
-  margin-left: 2rem;
+  margin: 1.5vmax;
+  margin-left: 2vmax;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2vmax;
+  overflow: scroll;
 }
 
 .panelsContainer {
   display: flex;
-  margin: 10px;
+  margin: 1vmax;
+}
+
+@media screen and (max-width: 1024px) {
+  .panelsContainer {
+    flex-direction: column;
+  } 
 }
 
 .panelTitleIcon {
   color: white;
-  font-size: 2rem;
+  font-size: 3vmax;
   display: flex;
   align-items: center;
 }
@@ -99,3 +105,9 @@
 .passwordBoxItem {
   margin-left: 20px;
 }
+
+/* 
+Task: Refactor all this code, changing all length values to its respective vh/vw/vmax/etc value.
+So that the page is responsive.
+*/
+
